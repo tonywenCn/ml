@@ -18,7 +18,7 @@
 
 # 排序指标
 排序指标一般用来衡量序关系的好坏，常见的排序指标包含:
-- DCG(Discounted Cumulative Gain) 和 NDCG(Normalized Discounted Cumulative Gain)
+- DCG(Discounted Cumulative Gain) 和 NDCG(Normalized DCG)
 - MRR(Mean Reciprocal Rank)
 - MAP(Mean Average Precision)
 - MAPE(Mean Absolute Percentage Error)
@@ -27,6 +27,6 @@
 
 
 # Reference:
-1. [DCG & NDCG wikipedia][https://en.wikipedia.org/wiki/Discounted_cumulative_gain]
-2. [MAPE wikipedia][https://en.wikipedia.org/wiki/Mean_absolute_percentage_error]
-3. [MRR wikipedia][https://en.wikipedia.org/wiki/Mean_reciprocal_rank]
+1. [DCG & NDCG wikipedia](https://en.wikipedia.org/wiki/Discounted_cumulative_gain)
+2. [MAPE wikipedia](https://en.wikipedia.org/wiki/Mean_absolute_percentage_error)
+3. [MRR wikipedia](https://en.wikipedia.org/wiki/Mean_reciprocal_rank)
