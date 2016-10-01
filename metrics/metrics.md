@@ -18,6 +18,7 @@
 下面详细介绍这些指标。
 ### 精度(Accuracy) 和 错误 (Error)
 这个指标既适合二分类问题，也适合都分类问题。
+
 精度定义如下：
 
 ![](http://latex.codecogs.com/gif.latex?Accuracy=\\frac{1}{N} \\sum_{n=1}^N(f(x_i)=y_i))
