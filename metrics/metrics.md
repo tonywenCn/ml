@@ -20,7 +20,7 @@
 这个指标既适合二分类问题，也适合都分类问题。
 精度定义如下：
 
-![](http://latex.codecogs.com/gif.latex?Accuracy=\\frac{1}{m} \\sum_{n=1}^N(f(x_i)=y_i))
+![](http://latex.codecogs.com/gif.latex?Accuracy=\\frac{1}{N} \\sum_{n=1}^N(f(x_i)=y_i))
 
 ### 准确率(Precision)、 召回 (Recall) 和 F1
 ### 曲线和面积：aucROC 和 aucPR
