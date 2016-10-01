@@ -23,14 +23,14 @@
 ### 精度(Accuracy) 和 错误 (Error)
 这个指标既适合二分类问题，也适合都分类问题。
 
-精度定义如下：
+**精度定义**如下：
 
 ![](http://latex.codecogs.com/gif.latex?Accuracy=\\frac{1}{N} \\sum_{n=1}^N(f(x_i)=y_i)=\\frac{TP + TN}{TP + TN + FP + FN})
 
 其表达的是: 预测正确的占整体样本的比例。
 
 
-错误定义如下：
+**错误定义**如下：
 
 ![](http://latex.codecogs.com/gif.latex?Error=\\frac{1}{N} \\sum_{n=1}^N(f(x_i)\\neq y_i)=\\frac{FP + FN}{TP + TN + FP + FN}=1-Accuracy)
 
