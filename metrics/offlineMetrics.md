@@ -13,14 +13,10 @@
 | 真实类别        | 预测类别   | 预测类别 |
 | ------------- |:-------------:| -----:|
 |     | 正例 | 负例 |
-|正例 | TP   | FN   |
-|负例 | FP   | TN   |
+|正例 | TP(True Positive)   | FN(False Negative)   |
+|负例 | FP(False Positive)   | TN(True Negative)   |
 
-其中：
-- TP: True Positive,  表示_正例被预测成正例_
-- FN: False Negative, 表示_正例被预测成负例_
-- FP: False Positive, 表示_负例被预测成正例_
-- TN: True Negative,  表示_负例被预测成负例_
+简单解释一下上面这个表格，TP表示_正例被预测成正例_， 其他类推。
 
 根据上面这个表格，可以计算下面这些指标：
 - 精度(Accuracy) 和 错误 (Error)
@@ -65,6 +61,12 @@
 **召回率定义**:
 
 ![](http://latex.codecogs.com/gif.latex?Precision=\\frac{TP}{TP + FN})
+
+**最常用的场景**： 在给定样本集合上，有一个分类器给出一个相关性的连续预测值(例如LR/GBDT)，可以取了一个阈值，大于等于该阈值的样本被称为预测为相关，小于该阈值的被称为预测不相关，于是我们就可以计算当前阈值下的准确率和召回率。 还使用上面这个相关性的问题作为例子：
+- ![](http://latex.codecogs.com/gif.latex?Precision=\\frac{TP}{TP + FP}=\\frac{600}{600+50})
+- ![](http://latex.codecogs.com/gif.latex?Precision=\\frac{TP}{TP + FN}=\\frac{600}{600+100})
+
+
 
 **F1定义**
 
