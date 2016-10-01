@@ -50,7 +50,9 @@
 
 **F1定义**
 
-### 曲线和面积：aucROC 和 aucPR
+
+### ROC曲线面积和PR面积
+
 
 ## 多分类指标
 
@@ -68,3 +70,4 @@
 1. [DCG & NDCG wikipedia](https://en.wikipedia.org/wiki/Discounted_cumulative_gain)
 2. [MAPE wikipedia](https://en.wikipedia.org/wiki/Mean_absolute_percentage_error)
 3. [MRR wikipedia](https://en.wikipedia.org/wiki/Mean_reciprocal_rank)
+4. [ICML2006: The Relationship Between Precision-Recall and ROC Curves](http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_DavisG06.pdf)
