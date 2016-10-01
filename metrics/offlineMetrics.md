@@ -74,11 +74,22 @@
 
 
 **F1定义**
-![](http://latex.codecogs.com/gif.latex?F1=\\frac{2}{\\frac{1}{TP} + \\frac{1}{FN}})
+
+![](http://latex.codecogs.com/gif.latex?F1=\\frac{2}{\\frac{1}{Precision} + \\frac{1}{Recall}})
+
+F1 score是precision和recall的调和平均。 从定义中也较为容易的看出：F1 score是既考虑了precision也考虑了recall，这样我们在比较2个算法的好坏的时候，只需要一个单一的标量即可。
+
 
 ---
 
 ### ROC曲线面积和PR面积
+**P/R/F1的缺陷**
+在precision、recall中，我们没有考虑TN的情况(precision, recall & F1只考虑了 TP FP FN的情况)， 在class distribution imbalance problem中，其不是很好的分类指标，例如，分类1有90个samples,分类2有10个samples, 如果:
+- 分类器1：把所有samples都预测为正例，其precision=0.9, recall=1.0, F1=0.947
+- 分类器2：把分类1 90个samples中的70个分为正例, 分类2 10个samples中的5个分为了正例， 其precision=70/(70+5)=0.93, recall=70/90=0.78, F1=0.848
+分类器1虽然F1 score高于分类器2， 但是从实际中分类器2更有用(**TODO:如何定义更有用**)。 
+
+**ROC定义**
 
 
 ## 多分类指标
@@ -97,4 +108,5 @@
 1. [DCG & NDCG wikipedia](https://en.wikipedia.org/wiki/Discounted_cumulative_gain)
 2. [MAPE wikipedia](https://en.wikipedia.org/wiki/Mean_absolute_percentage_error)
 3. [MRR wikipedia](https://en.wikipedia.org/wiki/Mean_reciprocal_rank)
-4. [ICML2006: The Relationship Between Precision-Recall and ROC Curves](http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_DavisG06.pdf)
+4. [F1 score wikipedia](https://en.wikipedia.org/wiki/F1_score)
+5. [ICML2006: The Relationship Between Precision-Recall and ROC Curves](http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_DavisG06.pdf)
