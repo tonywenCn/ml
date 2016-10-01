@@ -19,7 +19,8 @@
 ### 精度(Accuracy) 和 错误 (Error)
 这个指标既适合二分类问题，也适合都分类问题。
 精度定义如下：
-![](http://latex.codecogs.com/gif.latex?Accuracy=\\frac{1}{m})
+
+![](http://latex.codecogs.com/gif.latex?Accuracy=\\frac{1}{m} \\sum_{n=1}^Na_n)
 
 ### 准确率(Precision)、 召回 (Recall) 和 F1
 ### 曲线和面积：aucROC 和 aucPR
