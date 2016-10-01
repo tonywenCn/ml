@@ -24,11 +24,12 @@
 
 其表达的是: 预测正确的占整体样本的比例。
 
+
 错误定义如下：
 
 ![](http://latex.codecogs.com/gif.latex?Error=\\frac{1}{N} \\sum_{n=1}^N(f(x_i)\\neq y_i)=1-Accuracy)
 
-其表达的是：预测错误的占整体样本的比例， Error = 1 - Accuracy
+其表达的是：预测错误的占整体样本的比例。
 ### 准确率(Precision)、 召回 (Recall) 和 F1
 ### 曲线和面积：aucROC 和 aucPR
 
