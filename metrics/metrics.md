@@ -36,6 +36,18 @@
 
 其表达的是：预测错误的占整体样本的比例。
 ### 准确率(Precision)、 召回 (Recall) 和 F1
+准确率和召回率是在IR中使用最多的指标。
+
+**准确率定义**：
+
+![](http://latex.codecogs.com/gif.latex?Precision=\\frac{TP}{TP + FP})
+
+**召回率定义**:
+
+![](http://latex.codecogs.com/gif.latex?Precision=\\frac{TP}{TP + FN})
+
+**F1定义**
+
 ### 曲线和面积：aucROC 和 aucPR
 
 ## 多分类指标
