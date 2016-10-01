@@ -17,10 +17,10 @@
 |负例 | FP   | TN   |
 
 其中：
-- TP: True Positive,  表示__正例被预测成正例__
-- FN: False Negative, 表示正例被预测成负例
-- FP: False Positive, 表示负例被预测成正例
-- TN: True Negative,  表示负例被预测成负例
+- TP: True Positive,  表示_正例被预测成正例_
+- FN: False Negative, 表示_正例被预测成负例_
+- FP: False Positive, 表示_负例被预测成正例_
+- TN: True Negative,  表示_负例被预测成负例_
 
 根据上面这个表格，可以计算下面这些指标：
 - 精度(Accuracy) 和 错误 (Error)
