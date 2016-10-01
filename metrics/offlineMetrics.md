@@ -21,6 +21,16 @@
 - 准确率(Precision)、 召回 (Recall) 和 F1
 - 曲线和面积：aucROC 和 aucPR
 
+举个例子，如果有1000\<Query, Document>对，其中：
+- 有700对人工评估是相关的，
+- 有300对人工评估是不相关的。
+有一个相关性模型能对这些\<Query, Document>对进行相关性评分，评分后的结果如下：
+| 真实类别        | 预测类别   | 预测类别 |
+| ------------- |:-------------:| -----:|
+|     | 正例 | 负例 |
+|正例 | TP(600对)   | FN(100对)   |
+|负例 | FP(50对)   | TN(250对)   |
+
 下面详细介绍这些指标。
 ### 精度(Accuracy) 和 错误 (Error)
 这个指标既适合二分类问题，也适合都分类问题。
@@ -29,7 +39,7 @@
 
 ![](http://latex.codecogs.com/gif.latex?Accuracy=\\frac{1}{N} \\sum_{n=1}^N(f(x_i)=y_i)=\\frac{TP + TN}{TP + TN + FP + FN})
 
-其表达的是: 预测正确的占整体样本的比例。
+其表达的是: 预测正确的占整体样本的比例。在上面这个例子中![](http://latex.codecogs.com/gif.latex?Accuracy=\\frac{1}{N} \\sum_{n=1}^N(f(x_i)=y_i)=\\frac{TP + TN}{TP + TN + FP + FN}=\\frac{600 + 250}{600 + 100 + 50 + 250} = 0.85)
 
 
 **错误定义**如下：
