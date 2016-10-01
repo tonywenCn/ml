@@ -68,13 +68,15 @@
 ![](http://latex.codecogs.com/gif.latex?Precision=\\frac{TP}{TP + FN})
 
 **最常用的场景**： 在给定样本集合上，有一个分类器给出一个相关性的连续预测值(例如LR/GBDT)，可以取了一个阈值，大于等于该阈值的样本被称为预测为相关，小于该阈值的被称为预测不相关，于是我们就可以计算当前阈值下的准确率和召回率。 还使用上面这个相关性的问题作为例子：
-- ![](http://latex.codecogs.com/gif.latex?Precision=\\frac{TP}{TP + FP}=\\frac{600}{600+50})
-- ![](http://latex.codecogs.com/gif.latex?Precision=\\frac{TP}{TP + FN}=\\frac{600}{600+100})
+- ![](http://latex.codecogs.com/gif.latex?Precision=\\frac{TP}{TP + FP}=\\frac{600}{600+50}=0.923)
+- ![](http://latex.codecogs.com/gif.latex?Precision=\\frac{TP}{TP + FN}=\\frac{600}{600+100}=0.857)
 
 
 
 **F1定义**
+![](http://latex.codecogs.com/gif.latex?F1=\\frac{2}{\\frac{1}{TP} + \\frac{1}{FN}})
 
+---
 
 ### ROC曲线面积和PR面积
 
