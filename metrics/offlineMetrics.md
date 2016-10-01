@@ -40,14 +40,15 @@
 
 ![](http://latex.codecogs.com/gif.latex?Accuracy=\\frac{1}{N} \\sum_{n=1}^N(f(x_i)=y_i)=\\frac{TP + TN}{TP + TN + FP + FN})
 
-其表达的是: 预测正确的占整体样本的比例。在上面这个例子中![](http://latex.codecogs.com/gif.latex?Accuracy=\\frac{TP + TN}{TP + TN + FP + FN}=\\frac{600 + 250}{600 + 100 + 50 + 250} = 0.85)
+其表达的是: 预测正确的占整体样本的比例。在上面相关性的例子中，我们可以计算得到精度为：![](http://latex.codecogs.com/gif.latex?Accuracy=\\frac{TP + TN}{TP + TN + FP + FN}=\\frac{600 + 250}{600 + 100 + 50 + 250} = 0.85)
 
 
 **错误定义**如下：
 
 ![](http://latex.codecogs.com/gif.latex?Error=\\frac{1}{N} \\sum_{n=1}^N(f(x_i)\\neq y_i)=\\frac{FP + FN}{TP + TN + FP + FN}=1-Accuracy)
 
-其表达的是：预测错误的占整体样本的比例。
+其表达的是：预测错误的占整体样本的比例。在上面相关性的例子中，我们可以计算得到错误率为：![](http://latex.codecogs.com/gif.latex?Error=\\frac{TP + TN}{TP + TN + FP + FN}=\\frac{100 + 50}{600 + 100 + 50 + 250} = 0.15)
+
 ### 准确率(Precision)、 召回 (Recall) 和 F1
 准确率和召回率是在IR中使用最多的指标。
 
