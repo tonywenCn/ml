@@ -78,11 +78,14 @@
 
 F1 score是precision和recall的调和平均(较为容易证明F1的取值范围为[min(precision, recall), max(precision, recall)])。 从定义中也较为容易的看出：F1 score是既考虑了precision也考虑了recall，这样我们在比较2个算法的好坏的时候，只需要一个单一的标量即可。
 
+**PR曲线**
+
+
 
 ---
 
-## ROC曲线面积和PR面积
-**P/R/F1的缺陷**
+## ROC曲线面积
+**Precision/Recall/F1的缺陷**
 
 在precision、recall中，没有考虑TN的情况(precision, recall & F1只考虑了 TP FP FN的情况)， 在class distribution imbalance problem中，其不是很好的分类指标，例如，分类1有90个samples,分类2有10个samples, 如果:
 - 分类器1：把所有samples都预测为正例，其precision=0.9, recall=1.0, F1=0.947
