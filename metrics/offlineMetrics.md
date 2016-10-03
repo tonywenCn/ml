@@ -169,11 +169,14 @@ MRR经常使用在二分类问题的排序指标上。 定义请参考[wikipedia
 
 ## MAP (Mean Average Precision)
 MAP经常使用在二分类问题的排序指标上。 
-- P@k: 表示top k个document的precision.
+- P@k: 表示1个Query下，top k个document的precision.
+
    ![](http://latex.codecogs.com/gif.latex?P@k=\\frac{\\sum_{i=1}^k(rel_i)}{k})
-- AvgP@k：
+- AvgP@k：表示1个Query下，top k个document的平均P@i i=[1,k]
+
    ![](http://latex.codecogs.com/gif.latex?AvgP@k=\\frac{\\sum_{i=1}^k(P@i)}{k})
-- MAP@k:
+- MAP@k: 表示N个Query的平均AvgP@k
+
    ![](http://latex.codecogs.com/gif.latex?MAP@k=\\frac{\\sum_{i=1}^N(AvgP@k)}{N})
 
 ## MAPE
