@@ -159,13 +159,22 @@ ROC曲线有以下特点：
 其中![](http://latex.codecogs.com/gif.latex?IDCG_i)是最好的排序结果时的DCG，即按照相关性由高到低排序后计算得到的DCG。这样NDCG就是一个(0,1]之间的一个指标，值越大，排序效果越好。
 
 
-## MRR
+## MRR （Mean Reciprocal Rank）
 MRR经常使用在二分类问题的排序指标上。 定义请参考[wikipedia](https://en.wikipedia.org/wiki/Mean_reciprocal_rank): 
 > The mean reciprocal rank is a statistic measure for evaluating any process that produces a list of possible responses to a sample of queries, ordered by probability of correctness. The reciprocal rank of a query response is the multiplicative inverse of the rank of the first correct answer. The mean reciprocal rank is the average of the reciprocal ranks of results for a sample of queries Q.
 
 ![](http://latex.codecogs.com/gif.latex?MRR=\\frac{1}{|Q|}\\sum_{i=1}^{|Q|}(\\frac{1}{Rank_i}))
 
-## MAP
+其中![](http://latex.codecogs.com/gif.latex?Rank_i) 表示第i个Query中第一个相关的文档的位置.
+
+## MAP (Mean Average Precision)
+MAP经常使用在二分类问题的排序指标上。 
+- P@k: 表示top k个document的precision.
+   ![](http://latex.codecogs.com/gif.latex?P@k=\\frac{\\sum_{i=1}^k(rel_i)}{k})
+- AvgP@k：
+   ![](http://latex.codecogs.com/gif.latex?AvgP@k=\\frac{\\sum_{i=1}^k(P@i)}{k})
+- MAP@k:
+   ![](http://latex.codecogs.com/gif.latex?MAP@k=\\frac{\\sum_{i=1}^N(AvgP@k)}{N})
 
 ## MAPE
 
