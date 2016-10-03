@@ -142,9 +142,9 @@ ROC曲线有以下特点：
 
 于是根据这个假设，就设计出DCG：
 
-![](http://latex.codecogs.com/gif.latex?DCG@p=rel_1+\\sum_{i=2}^p(\\frac{rel_i}{log_2(i)})(1))
+![](http://latex.codecogs.com/gif.latex?DCG@p=rel_1+\\sum_{i=2}^p(\\frac{rel_i}{log_2(i)})  (1))
 
-![](http://latex.codecogs.com/gif.latex?DCG@p=\\sum_{i=1}^p(\\frac{2^rel_i - 1}{log_2(i)}))
+![](http://latex.codecogs.com/gif.latex?DCG@p=\\sum_{i=1}^p(\\frac{2^{rel_i} - 1}{log_2(i)})  (2))
 
 
 ## MRR
