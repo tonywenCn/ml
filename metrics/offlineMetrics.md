@@ -80,6 +80,9 @@ F1 score是precision和recall的调和平均(较为容易证明F1的取值范围
 
 **PR曲线**
 
+绝大多数分类器，能预测一个连续的值，预测结果在不同threshold下，可以获得不同的precision和recall值， 于是我们可以画出precision recall曲线，然后我们可以根据业务需求和precision recall曲线，选择具体的threshold来判定正负例。下面是一个典型的precision recall曲线
+
+![][https://qph.ec.quoracdn.net/main-qimg-ddd56eeeae45bcd95093859b87454e73?convert_to_webp=true]
 
 
 ---
@@ -133,6 +136,13 @@ ROC曲线有以下特点：
 
 ## DCG & NDCG
 在搜索相关性排序中，DCG和NDCG是最经常使用的排序指标，主流的搜索引擎公司最核心的指标之一就是DCG&NDCG。 
+在排序中，一般会有如下假设：
+- 更高相关性的文档排名越靠前，排序效果越好。
+- 在同一个位置上，高相关性的文档比不相关商品排名要好。
+
+于是根据这个假设，就设计出DCG：
+![](http://latex.codecogs.com/gif.latex?DCG@p=rel_1+\\sum_{i=2}^p(\\frac{rel_i}{log_2(i)}))
+
 
 ## MRR
 
