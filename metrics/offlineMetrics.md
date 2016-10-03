@@ -182,11 +182,16 @@ MAP经常使用在二分类问题的排序指标上。
 因此MAP的物理意义就是：每个Query平均的aucPR.
 
 ## Kendall Tau's
-
+Kendall's tau在实际中较少使用(在Y!的项目中使用过该指标)，主要用于描述2个随机变量的相关性。这里可以用来表示1个perfect的序关系和一个预测的序关系的相关性。 具体可以参考[Kendall Tau's ranking correlation](https://en.wikipedia.org/wiki/Kendall_rank_correlation_coefficient)
 
 # 回归指标
+## MAE（Mean Absolute Error）
+![](http://latex.codecogs.com/gif.latex?MAE=\\frac{\\sum_{i=1}^N(y_i - \\hat(y_i))}{N})
 
-## MAPE
+## MSE（Mean Square Error）
+## RMSE （Root Mean Square Error）
+## MedAE （Median Absolute Error）
+## MAPE （Mean Absolute Percentag Error）
 
 # Reference:
 1. [DCG & NDCG wikipedia](https://en.wikipedia.org/wiki/Discounted_cumulative_gain)
