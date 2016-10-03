@@ -113,10 +113,9 @@ ROC曲线上的点比较直观的刻画了分类器在某个阈值下，正负�
 
 ![ROC曲线](https://upload.wikimedia.org/wikipedia/commons/6/6b/Roccurves.png)
 
-aucROC是有其物理意义的，在wikipedia上的解释如下: aucROC是等价于随机从正负例中各抽样一个sample， 正例的排序高于负例排序的概率就等价于aucROC的值，具体请参考wikipedia:
+aucROC是有其物理意义的，在wikipedia上的解释如下: aucROC是等价于随机从正负例中各抽样一个sample， 正例的得分高于负例的得分的概率就等价于aucROC的值，具体请参考wikipedia:
 > When using normalized units, the area under the curve (often referred to as simply the AUC, or AUROC) is equal to the probability that a classifier will rank a randomly chosen positive instance higher than a randomly chosen negative one (assuming 'positive' ranks higher than 'negative').
  
-   
    
 
 ## 多分类指标
