@@ -189,9 +189,16 @@ Kendall's tau在实际中较少使用(在Y!的项目中使用过该指标)，主
 ![](http://latex.codecogs.com/gif.latex?MAE=\\frac{\\sum_{i=1}^N(|y_i - \\hat{y_i}|)}{N})
 
 ## MSE（Mean Square Error）
+![](http://latex.codecogs.com/gif.latex?MSE=\\frac{\\sum_{i=1}^N(y_i - \\hat{y_i})^2}{N})
+
 ## RMSE （Root Mean Square Error）
+![](http://latex.codecogs.com/gif.latex?RMSE=\sqrt[n]{\\frac{\\sum_{i=1}^N(y_i - \\hat{y_i})^2}{N}})
+
 ## MedAE （Median Absolute Error）
+
 ## MAPE （Mean Absolute Percentag Error）
+![](http://latex.codecogs.com/gif.latex?MAPE=100 * \\frac{1}{N} \\frac{\\sum_{i=1}^N(|y_i - \\hat{y_i}|)}{|y_i|})
+
 
 # Reference:
 1. [DCG & NDCG wikipedia](https://en.wikipedia.org/wiki/Discounted_cumulative_gain)
