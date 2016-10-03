@@ -94,12 +94,24 @@ F1 score是precision和recall的调和平均(较为容易证明F1的取值范围
 **ROC曲线定义**
 > In statistics, a receiver operating characteristic (ROC), or ROC curve, is a graphical plot that illustrates the performance of a binary classifier system as its discrimination threshold is varied.  The curve is created by plotting the true positive rate (TPR) against the false positive rate (FPR) at various threshold settings.
 
-ROC曲线：是一条曲线，其:
+ROC曲线：是一条曲线，其中:
 - 横坐标是FPR(False Positive Rate): 
-   ![](http://latex.codecogs.com/gif.latex?FPR=\\frac{FP}{FP + TN})
+
+   ![](http://latex.codecogs.com/gif.latex?FPR=\\frac{FP}{FP + TN}) FPR可以理解为是负例的召回率
    
 - 纵坐标是TPR(True Positive Rate):  
-   ![](http://latex.codecogs.com/gif.latex?FPR=\\frac{TP}{TP + FN})
+
+   ![](http://latex.codecogs.com/gif.latex?FPR=\\frac{TP}{TP + FN}) TPR可以理解为是正例的召回率
+   
+在ROC曲线中，每个点(x,y)表示的含义是: 在正例召回率为y的情况下， 负例召回率为x。因为x/y表达的都是召回率，其取值范围为[0,1], 因此ROC曲线是一个在1x1的正方形中的曲线。 对二分的问题进行分类：
+- 无任何分类能力的分类器：如果对所有samples赋一个随机数，对于FPR=x, TPR的期望也是x, 这时ROC曲线是一条y=x的直线。 
+- 一个完美的分类器是：在正例召回率(TPR)为1.0时, 负例的召回率(FPR)为0.0, 这个时候ROC曲线是2条直线组成(a) 从(0,0)到(0,1)的直线 (b) 从(0,1)到(1,1)的直线。
+
+ROC曲线上的点比较直观的刻画了分类器在某个阈值下，正负例各自的召回比例，反映出在这个阈值下分类器的分类能力。 但是在评估不同的模型时，如果使用ROC来评估哪个模型更好，最好要比较直观的通过1个标量数据来表达出来，在实践中，这个指标就是ROC曲线下的面积。
+
+！[ROC曲线](https://upload.wikimedia.org/wikipedia/commons/6/6b/Roccurves.png)
+
+
  
    
    
