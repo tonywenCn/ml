@@ -82,7 +82,7 @@ F1 score是precision和recall的调和平均(较为容易证明F1的取值范围
 
 绝大多数分类器，能预测一个连续的值，预测结果在不同threshold下，可以获得不同的precision和recall值， 于是我们可以画出precision recall曲线，然后我们可以根据业务需求和precision recall曲线，选择具体的threshold来判定正负例。下面是一个典型的precision recall曲线
 
-![][https://qph.ec.quoracdn.net/main-qimg-ddd56eeeae45bcd95093859b87454e73?convert_to_webp=true]
+![](https://qph.ec.quoracdn.net/main-qimg-ddd56eeeae45bcd95093859b87454e73?convert_to_webp=true)
 
 
 ---
@@ -144,7 +144,16 @@ ROC曲线有以下特点：
 
 ![](http://latex.codecogs.com/gif.latex?DCG@p=rel_1+\\sum_{i=2}^p(\\frac{rel_i}{log_2(i)})  (1))
 
-![](http://latex.codecogs.com/gif.latex?DCG@p=\\sum_{i=1}^p(\\frac{2^{rel_i} - 1}{log_2(i)})  (2))
+![](http://latex.codecogs.com/gif.latex?DCG@p=\\sum_{i=1}^p(\\frac{2^{rel_i} - 1}{log_2(i+1)})  (2))
+
+其中(1)跟(2) 比较，差异在于:
+1. 相同位置和质量的文档，(2)对position的discount更大。
+2. 相同位置和质量的文档，(2)对质量的文档加权更大。
+
+在使用DCG计算排序结果的指标时，面临一个问题就是不同Query之间的DCG是不可以比的，因为不同Query的相关和不相关的文档数量是不一样的。于是就引入了NDCG(normalized DCG):
+![](http://latex.codecogs.com/gif.latex?nDCG@p=sum_{i=1}^N\\frac{DCG_i}{IDCG_i}))
+
+其中![](http://latex.codecogs.com/gif.latex?IDCG_i)是最好的排序结果时的DCG，即按照相关性由高到低排序后计算得到的DCG。
 
 
 ## MRR
