@@ -186,7 +186,7 @@ Kendall's tau在实际中较少使用(在Y!的项目中使用过该指标)，主
 
 # 回归指标
 ## MAE（Mean Absolute Error）
-![](http://latex.codecogs.com/gif.latex?MAE=\\frac{\\sum_{i=1}^N(y_i - \\hat(y_i))}{N})
+![](http://latex.codecogs.com/gif.latex?MAE=\\frac{\\sum_{i=1}^N(|y_i - \\hat{y_i}|)}{N})
 
 ## MSE（Mean Square Error）
 ## RMSE （Root Mean Square Error）
