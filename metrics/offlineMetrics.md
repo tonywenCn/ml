@@ -172,12 +172,15 @@ MAP经常使用在二分类问题的排序指标上。
 - P@k: 表示1个Query下，top k个document的precision.
 
    ![](http://latex.codecogs.com/gif.latex?P@k=\\frac{\\sum_{i=1}^k(rel_i)}{k})
-- AvgP@k：表示1个Query下，top k个document的平均P@i i=[1,k]
+- AvgP@k：表示1个Query下，不同位置生成的PR曲线的面积(AUC):
 
    ![](http://latex.codecogs.com/gif.latex?AvgP@k=\\frac{\\sum_{i=1}^k(P@i * rel(i))}{num of relevant document in top k})
 - MAP@k: 表示N个Query的平均AvgP@k
 
    ![](http://latex.codecogs.com/gif.latex?MAP@k=\\frac{\\sum_{i=1}^N(AvgP@k)}{N})
+   
+因此MAP的物理意义就是：每个Query平均的aucPR.
+
 
 ## MAPE
 
