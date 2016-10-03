@@ -109,7 +109,7 @@ ROC曲线：是一条曲线，其中:
 
 ROC曲线上的点比较直观的刻画了分类器在某个阈值下，正负例各自的召回比例，反映出在这个阈值下分类器的分类能力。 但是在评估不同的模型时，如果使用ROC来评估哪个模型更好，最好要比较直观的通过1个标量数据来表达出来，在实践中，这个指标就是ROC曲线下的面积。
 
-！[ROC曲线](https://upload.wikimedia.org/wikipedia/commons/6/6b/Roccurves.png)
+![ROC曲线](https://upload.wikimedia.org/wikipedia/commons/6/6b/Roccurves.png)
 
 
  
