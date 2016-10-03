@@ -109,11 +109,12 @@ ROC曲线：是一条曲线，其中:
 - 无任何分类能力的分类器：如果对所有samples赋一个随机数，对于FPR=x, TPR的期望也是x, 这时ROC曲线是一条y=x的直线。 
 - 一个完美的分类器是：在正例召回率(TPR)为1.0时, 负例的召回率(FPR)为0.0, 这个时候ROC曲线是2条直线组成(a) 从(0,0)到(0,1)的直线 (b) 从(0,1)到(1,1)的直线。
 
-ROC曲线上的点比较直观的刻画了分类器在某个阈值下，正负例各自的召回比例，反映出在这个阈值下分类器的分类能力。 但是在评估不同的模型时，如果使用ROC来评估哪个模型更好，最好要比较直观的通过1个标量数据来表达出来，在实践中，这个指标就是ROC曲线下的面积。
+ROC曲线上的点比较直观的刻画了分类器在某个阈值下，正负例各自的召回比例，反映出在这个阈值下分类器的分类能力。 但是在评估不同的模型时，如果使用ROC来评估哪个模型更好，最好要比较直观的通过1个标量数据来表达出来，在实践中，这个指标就是ROC曲线下的面积(Area Under Curve: AUC)。
 
 ![ROC曲线](https://upload.wikimedia.org/wikipedia/commons/6/6b/Roccurves.png)
 
-
+aucROC是有其物理意义的，在wikipedia上的解释如下: aucROC是等价于随机从正负例中各抽样一个sample， 正例的排序高于负例排序的概率就等价于aucROC的值，具体请参考wikipedia:
+> When using normalized units, the area under the curve (often referred to as simply the AUC, or AUROC) is equal to the probability that a classifier will rank a randomly chosen positive instance higher than a randomly chosen negative one (assuming 'positive' ranks higher than 'negative').
  
    
    
