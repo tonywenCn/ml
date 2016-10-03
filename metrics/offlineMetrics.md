@@ -150,13 +150,20 @@ ROC曲线有以下特点：
 1. 相同位置和质量的文档，(2)对position的discount更大。
 2. 相同位置和质量的文档，(2)对质量的文档加权更大。
 
+在工业界一般采用(2), 因为(2)趋向给把更相关商品排在更前面的算法更高分数。
+
 在使用DCG计算排序结果的指标时，面临一个问题就是不同Query之间的DCG是不可以比的，因为不同Query的相关和不相关的文档数量是不一样的。于是就引入了NDCG(normalized DCG):
+
 ![](http://latex.codecogs.com/gif.latex?nDCG@p=sum_{i=1}^N\\frac{DCG_i}{IDCG_i}))
 
-其中![](http://latex.codecogs.com/gif.latex?IDCG_i)是最好的排序结果时的DCG，即按照相关性由高到低排序后计算得到的DCG。
+其中![](http://latex.codecogs.com/gif.latex?IDCG_i)是最好的排序结果时的DCG，即按照相关性由高到低排序后计算得到的DCG。这样NDCG就是一个(0,1]之间的一个指标，值越大，排序效果越好。
 
 
 ## MRR
+MRR经常使用在二分类问题的排序指标上。 定义请参考[wikipedia](https://en.wikipedia.org/wiki/Mean_reciprocal_rank): 
+> The mean reciprocal rank is a statistic measure for evaluating any process that produces a list of possible responses to a sample of queries, ordered by probability of correctness. The reciprocal rank of a query response is the multiplicative inverse of the rank of the first correct answer. The mean reciprocal rank is the average of the reciprocal ranks of results for a sample of queries Q.
+
+![](http://latex.codecogs.com/gif.latex?MRR=\\frac{1}{|Q|}\\sum_{i=1}^{|Q|}(\\frac{1}{Rank_i}))
 
 ## MAP
 
@@ -174,4 +181,5 @@ ROC曲线有以下特点：
 5. [ICML2006: The Relationship Between Precision-Recall and ROC Curves](http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_DavisG06.pdf)
 6. [参考的一篇中文博客，介绍ROC:AUC(Area Under roc Curve )计算及其与ROC的关系](http://www.cnblogs.com/guolei/archive/2013/05/23/3095747.html)
 7. [ROC wikipedia](https://en.wikipedia.org/wiki/Receiver_operating_characteristic)
+8. [常见Ranking指标](http://web.stanford.edu/class/cs276/handouts/EvaluationNew-handout-6-per.pdf)
 
