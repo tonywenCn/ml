@@ -116,7 +116,7 @@ aucROC是有其物理意义的，在wikipedia上的解释如下: aucROC是等价
 > When using normalized units, the area under the curve (often referred to as simply the AUC, or AUROC) is equal to the probability that a classifier will rank a randomly chosen positive instance higher than a randomly chosen negative one (assuming 'positive' ranks higher than 'negative').
  
 ROC曲线有以下特点：
-- 随着FPR的增加，TPR是增加或者持平的，TPR不可能降低。
+- 随着FPR的增加，TPR是增加或者持平的，TPR不可能降低； 也就是ROC是一条随x轴增大，y递增或者持平的曲线。
 - 如果aucROC低于0.5, 只需要将正负样本的label改变以下即可得到比随机更好的分类器。
 
 
