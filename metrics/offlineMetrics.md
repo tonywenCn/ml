@@ -96,11 +96,10 @@ F1 score是precision和recall的调和平均(较为容易证明F1的取值范围
 
 ROC曲线：是一条曲线，其:
 - 横坐标是FPR(False Positive Rate): 
-   
    ![](http://latex.codecogs.com/gif.latex?FPR=\\frac{FP}{FP + TN})
-   
 - 纵坐标是TPR(True Positive Rate):  
    ![](http://latex.codecogs.com/gif.latex?FPR=\\frac{TP}{TP + FN})
+ 
    
    
 
