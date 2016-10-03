@@ -95,8 +95,8 @@ F1 score是precision和recall的调和平均(较为容易证明F1的取值范围
 > In statistics, a receiver operating characteristic (ROC), or ROC curve, is a graphical plot that illustrates the performance of a binary classifier system as its discrimination threshold is varied.  The curve is created by plotting the true positive rate (TPR) against the false positive rate (FPR) at various threshold settings.
 
 ROC曲线：是一条曲线，其:
-- 横坐标是FPR(False Positive Rate): ![](http://latex.codecogs.com/gif.latex?FPR=\\frac{FP}{FP + TN}})
-- 纵坐标是TPR(True Positive Rate):  ![](http://latex.codecogs.com/gif.latex?FPR=\\frac{TP}{TP + FN}}), TPR = recall.
+- 横坐标是FPR(False Positive Rate): ![](http://latex.codecogs.com/gif.latex?FPR=\\frac{FP}{FP + TN})
+- 纵坐标是TPR(True Positive Rate):  ![](http://latex.codecogs.com/gif.latex?FPR=\\frac{TP}{TP + FN}), TPR = recall.
 
 ## 多分类指标
 
