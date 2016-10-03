@@ -37,7 +37,7 @@
 
 ---
 
-### 精度(Accuracy) 和 错误 (Error)
+## 精度(Accuracy) 和 错误 (Error)
 这个指标既适合二分类问题，也适合都分类问题。
 
 **精度定义**如下：
@@ -55,7 +55,7 @@
 
 ---
 
-### 准确率(Precision)、 召回 (Recall) 和 F1
+## 准确率(Precision)、 召回 (Recall) 和 F1
 准确率和召回率是在IR中使用最多的指标。
 
 **准确率定义**：
@@ -81,7 +81,7 @@ F1 score是precision和recall的调和平均(较为容易证明F1的取值范围
 
 ---
 
-### ROC曲线面积和PR面积
+## ROC曲线面积和PR面积
 **P/R/F1的缺陷**
 
 在precision、recall中，没有考虑TN的情况(precision, recall & F1只考虑了 TP FP FN的情况)， 在class distribution imbalance problem中，其不是很好的分类指标，例如，分类1有90个samples,分类2有10个samples, 如果:
@@ -126,6 +126,18 @@ ROC曲线有以下特点：
 - MRR(Mean Reciprocal Rank)
 - MAP(Mean Average Precision)
 - MAPE(Mean Absolute Percentage Error)
+- Kendall Tau's
+
+## DCG & NDCG
+在搜索相关性排序中，DCG和NDCG是最经常使用的排序指标，主流的搜索引擎公司最核心的指标之一就是DCG&NDCG。 
+
+## MRR
+
+## MAP
+
+## MAPE
+
+## Kendall Tau's
 
 # 聚类指标
 
