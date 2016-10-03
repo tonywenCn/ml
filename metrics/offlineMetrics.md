@@ -188,14 +188,15 @@ Kendall's tau在实际中较少使用(在Y!的项目中使用过该指标)，主
 ## MAE（Mean Absolute Error）
 ![](http://latex.codecogs.com/gif.latex?MAE=\\frac{\\sum_{i=1}^N(|y_i - \\hat{y_i}|)}{N})
 
+## MedAE （Median Absolute Error）
+MAE中有一个比较大的问题是，某些outlier会贡献绝对部分的Absolute Error, 为了克服这个问题，引入了MedAE:
+![](http://latex.codecogs.com/gif.latex?MedAE=median(|y_1 - \\hat{y_1}|, |y_2 - \\hat{y_2}|... |y_N - \\hat{y_N}|))
+
 ## MSE（Mean Square Error）
 ![](http://latex.codecogs.com/gif.latex?MSE=\\frac{\\sum_{i=1}^N(y_i - \\hat{y_i})^2}{N})
 
 ## RMSE （Root Mean Square Error）
 ![](http://latex.codecogs.com/gif.latex?RMSE=\\sqrt[2]{\\frac{\\sum_{i=1}^N(y_i - \\hat{y_i})^2}{N}})
-
-## MedAE （Median Absolute Error）
-![](http://latex.codecogs.com/gif.latex?MedAE=median(|y_1 - \\hat{y_1}|, |y_2 - \\hat{y_2}|... |y_N - \\hat{y_N}|))
 
 ## MAPE （Mean Absolute Percentag Error）
 ![](http://latex.codecogs.com/gif.latex?MAPE=100 * \\frac{1}{N} \\sum_{i=1}^N\\frac{|y_i - \\hat{y_i}|}{|y_i|})
