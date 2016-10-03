@@ -113,3 +113,5 @@ F1 score是precision和recall的调和平均。 从定义中也较为容易的�
 4. [F1 score wikipedia](https://en.wikipedia.org/wiki/F1_score)
 5. [ICML2006: The Relationship Between Precision-Recall and ROC Curves](http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_DavisG06.pdf)
 6. [参考的一篇中文博客，介绍ROC:AUC(Area Under roc Curve )计算及其与ROC的关系](http://www.cnblogs.com/guolei/archive/2013/05/23/3095747.html)
+7. [ROC wikipedia](https://en.wikipedia.org/wiki/Receiver_operating_characteristic)
+
