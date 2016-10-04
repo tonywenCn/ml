@@ -8,8 +8,13 @@
 - ABTest指标设计
 
 # ABTest机制设计
+## Non-Overlaping VS Overlapping bucket设计
+
+## Interleaving ABTest
 
 # ABTest指标设计
 
 # 总结
+
+# Reference
 
