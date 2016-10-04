@@ -6,6 +6,7 @@
    
 - MovieLen([数据描述页面](http://grouplens.org/datasets/movielens/)):
    - http://files.grouplens.org/papers/ml-100k.zip
+   - http://files.grouplens.org/datasets/movielens/ml-20m.zip
 
 - Adult dataset():
    - http://archive.ics.uci.edu/ml/datasets/Adult
