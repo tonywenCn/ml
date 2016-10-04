@@ -87,7 +87,7 @@ F1 score是precision和recall的调和平均(较为容易证明F1的取值范围
 
 ---
 
-## ROC曲线面积
+## ROC曲线和面积
 **Precision/Recall/F1的缺陷**
 
 在precision、recall中，没有考虑TN的情况(precision, recall & F1只考虑了 TP FP FN的情况)， 在class distribution imbalance problem中，其不是很好的分类指标，例如，分类1有90个samples,分类2有10个samples, 如果:
@@ -125,6 +125,14 @@ ROC曲线有以下特点：
 - 随着FPR的增加，TPR是增加或者持平的，TPR不可能降低； 也就是ROC是一条随x轴增大，y递增或者持平的曲线。
 - 如果aucROC低于0.5, 只需要将正负样本的label改变以下即可得到比随机更好的分类器。
 
+## PR & ROC曲线的关系
+PR和ROC的曲线的关系是什么？ 从同一个confusion matrix得到的2个指标，如何来比较呢？ [2006年ICML一篇文章试图来回答这个问题](http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_DavisG06.pdf), 总结如下：
+- 给定同一个测试集合(正负样本数量是固定的), PR上任何一个点都对应ROC上一个确定的点， 反之亦然，也就是给定PR曲线，ROC曲线也就固定了。
+- 针对同一个测试结合：
+   - 模型1的ROC曲线每个点都高于模型2，在PR曲线中，模型1的每个点都高于模型2。
+   - 模型1的PR曲线每个点都高于模型2，在ROC曲线中，模型1的每个点都高于模型2。
+- ROC满足convex hull特征，因此可以使用线性插值来计算AUC； PR 则不能使用线性插值来计算AUC
+- 在正负样本差异很大时，aucPR比ROC更加可靠(**TODO: 再次确认**)
 
 # 排序指标
 排序指标一般用来衡量序关系的好坏，常见的排序指标包含:
