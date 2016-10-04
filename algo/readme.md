@@ -21,7 +21,7 @@ Machine learning algorithms:
    - EM
    - HMM
    - CRF
-   - Top model: PLSA, LDA and word2vec
+   - Topic model: PLSA, LDA and word2vec
 7. SVM
    - Linear SVM
    - Kernal SVM
