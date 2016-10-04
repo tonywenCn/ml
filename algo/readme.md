@@ -1,6 +1,6 @@
 Machine learning algorithms:
 
-1. Liner model:
+1. Linear model:
    - Linear regression
    - Logistic regression
    - Linear Discriminant Analysis(LDA)
