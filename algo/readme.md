@@ -1,4 +1,5 @@
 Machine learning algorithms:
+
 1. Liner model:
    - Linear regression
    - Logistic regression
