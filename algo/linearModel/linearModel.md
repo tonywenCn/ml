@@ -8,8 +8,19 @@
 - **输入**：(x1, y1), (x2, y2), (x3, y3)...(xn, yn)， 其中xi是特征向量，yi是预测值
 - **输出**：w向量 使得 
    
-   ![](http://latex.codecogs.com/gif.latex?w=min(\\sum_{i=1}^n(w*x_i - y_i)^2)) 
+   ![](http://latex.codecogs.com/gif.latex?w=min(f(x))) 
+   ![](http://latex.codecogs.com/gif.latex?f(w,x)=\\sum_{i=1}^n(w*x_i - y_i)^2) 
 
+linear regression的直观解释:
+- loss function表达的是：样本点到直线wx的距离。
+- 最小化求解得到的直线wx是使所有样本点到直线wx欧几里得距离最小的直线。
+
+这是一个典型无约束优化问题，该求解函数满足：
+- 连续的，处处可导的函数
+- convex 函数(**证明这是convex函数**)
+
+这个优化问题最简单的数值求解方法就是使用梯度下降：
+![](http://latex.codecogs.com/gif.latex?w_i=w_i - \\gamma \\frac{\\partial f}{\\partial w_i} ) 
 
 # Logistic Regression
 
