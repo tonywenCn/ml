@@ -18,11 +18,15 @@ linear regression的直观解释:
 
 这是一个典型无约束优化问题，该求解函数满足：
 - 连续的，处处可导的函数
-- convex 函数(**证明这是convex函数**)
+- convex 函数(**TODO:证明这是convex函数**)
 
 这个优化问题最简单的数值求解方法就是使用梯度下降：
 - ![](http://latex.codecogs.com/gif.latex?w_i=w_i - \\gamma \\frac{\\partial f}{\\partial w_i} ) 
-- 其中
+- 其中：
+   - ![](http://latex.codecogs.com/gif.latex?\\gamma)是每次迭代的步长
+   - ![](http://latex.codecogs.com/gif.latex?\\frac{\\partial f}{\\partial w_i}) 是loss function关于w的偏导数:
+      
+      ![](http://latex.codecogs.com/gif.latex?\\frac{\\partial f}{\\partial w_i}=)
 
 # Logistic Regression
 
