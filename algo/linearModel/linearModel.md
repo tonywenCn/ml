@@ -9,6 +9,7 @@
 - **输出**：w向量 使得 
    
    ![](http://latex.codecogs.com/gif.latex?w=min(f(x))) 
+   
    ![](http://latex.codecogs.com/gif.latex?f(w,x)=\\sum_{i=1}^n(w*x_i - y_i)^2) 
 
 linear regression的直观解释:
@@ -20,7 +21,8 @@ linear regression的直观解释:
 - convex 函数(**证明这是convex函数**)
 
 这个优化问题最简单的数值求解方法就是使用梯度下降：
-![](http://latex.codecogs.com/gif.latex?w_i=w_i - \\gamma \\frac{\\partial f}{\\partial w_i} ) 
+- ![](http://latex.codecogs.com/gif.latex?w_i=w_i - \\gamma \\frac{\\partial f}{\\partial w_i} ) 
+- 其中
 
 # Logistic Regression
 
