@@ -31,6 +31,8 @@ linear regression的直观解释:
 **例子**
 - git source code: 
 - exmaple: ![](src/img/linear_regression_test1.png)
+
+
 # Logistic Regression
 
 # LDA
