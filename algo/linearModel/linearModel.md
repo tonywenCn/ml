@@ -26,7 +26,7 @@ linear regression的直观解释:
    - ![](http://latex.codecogs.com/gif.latex?\\gamma)是每次迭代的步长
    - ![](http://latex.codecogs.com/gif.latex?\\frac{\\partial f}{\\partial w_j}) 是loss function关于w的偏导数:
       
-      ![](http://latex.codecogs.com/gif.latex?\\frac{\\partial f}{\\partial w_j}=\\sum_{i=1}^n(w_j(\\sum_{j=1}^m(w_j*x_{ij}) - y_i)))
+      ![](http://latex.codecogs.com/gif.latex?\\frac{\\partial f}{\\partial w_j}=\\sum_{i=1}^n(x_{ij}(\\sum_{j=1}^m(w_j*x_{ij}) - y_i)))
 
 # Logistic Regression
 
