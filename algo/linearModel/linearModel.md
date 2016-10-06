@@ -28,6 +28,9 @@ linear regression的直观解释:
       
       ![](http://latex.codecogs.com/gif.latex?\\frac{\\partial f}{\\partial w_j}=\\sum_{i=1}^n(x_{ij}(\\sum_{j=1}^m(w_j*x_{ij}) - y_i)))
 
+**例子**
+- git source code: 
+- exmaple: ![](src/img/linear_regression_test1.png)
 # Logistic Regression
 
 # LDA
