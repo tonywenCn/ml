@@ -10,7 +10,7 @@
    
    ![](http://latex.codecogs.com/gif.latex?w=min(f(x))) 
    
-   ![](http://latex.codecogs.com/gif.latex?f(w,x)=\\sum_{i=1}^n(w*x_i - y_i)^2) 
+   ![](http://latex.codecogs.com/gif.latex?f(w,x)=\\sum_{i=1}^n(\\sum_{j=1}^m(w_j*x_ij) - y_i)^2) 
 
 linear regression的直观解释:
 - loss function表达的是：样本点到直线wx的距离。
