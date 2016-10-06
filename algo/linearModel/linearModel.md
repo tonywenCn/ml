@@ -21,7 +21,7 @@ linear regression的直观解释:
 - convex 函数(**TODO:证明这是convex函数**)
 
 这个优化问题最简单的数值求解方法就是使用梯度下降：
-- ![](http://latex.codecogs.com/gif.latex?w_i=w_i - \\gamma \\frac{\\partial f}{\\partial w_i} ) 
+- ![](http://latex.codecogs.com/gif.latex?w_j=w_j - \\gamma \\frac{\\partial f}{\\partial w_j} ) 
 - 其中：
    - ![](http://latex.codecogs.com/gif.latex?\\gamma)是每次迭代的步长
    - ![](http://latex.codecogs.com/gif.latex?\\frac{\\partial f}{\\partial w_j}) 是loss function关于w的偏导数:
