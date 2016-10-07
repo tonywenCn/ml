@@ -29,11 +29,15 @@ linear regression的直观解释:
       ![](http://latex.codecogs.com/gif.latex?\\frac{\\partial f}{\\partial w_j}=\\sum_{i=1}^n(x_{ij}(\\sum_{j=1}^m(w_j*x_{ij}) - y_i)))
 
 **例子**
-- git source code: 
+- git source code: https://github.com/tonywenCn/ml/blob/master/algo/linearModel/src/linear_regression.py
 - exmaple: ![](src/img/linear_regression_test1.png)
 
-
 # Logistic Regression
+对于二分类问题的拟合最容易想到方法是：
+- 把分类标签作为target 0/1， 然后使用linear regression进行拟合。在预测中，如果预测值大于0.5, 则标记为类别1，否则标记为类别0.
+
+该方法是比较直观的，
+
 
 # LDA
 
