@@ -11,7 +11,23 @@
   * 输入：V纬度(V是term字典大小)，其输入向量I中的每个元素I[k]表示单词k在当前连续片段中出现还是没有没有出现，出现用1表示，未出现用0表示。
   * 隐藏层：采用1个隐藏层的全连接神经网络，其隐藏层的大小一般从几十到千。
   * 输出层：V纬度(V是term字典大小)，其输出向量O表示给定一个片段中的前n和后n个term, 其中间的term的概率。
-  
+
+1. First ordered list item
+2. Another item
+⋅⋅* Unordered sub-list. 
+1. Actual numbers don't matter, just that it's a number
+⋅⋅1. Ordered sub-list
+4. And another item.
+
+⋅⋅⋅You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces (at least one, but we'll use three here to also align the raw Markdown).
+
+⋅⋅⋅To have a line break without a paragraph, you will need to use two trailing spaces.⋅⋅
+⋅⋅⋅Note that this line is separate, but within the same paragraph.⋅⋅
+⋅⋅⋅(This is contrary to the typical GFM line break behaviour, where trailing spaces are not required.)
+
+* Unordered list can use asterisks
+- Or minuses
++ Or pluses
   
 ## Skip Gram
 
