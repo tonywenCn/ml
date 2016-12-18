@@ -22,7 +22,15 @@ word embedding: 在NLP中，把词或者短语从字典空间映射到实数的�
 
 
 ## Skip Gram
-
+1. Make my changes
+  1. Fix bug
+  2. Improve formatting
+    * Make the headings bigger
+2. Push my commits to GitHub
+3. Open a pull request
+  * Describe my changes
+  * Mention all the members of my team
+    * Ask for feedback
 
 # 
 
