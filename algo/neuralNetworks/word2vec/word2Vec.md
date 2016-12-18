@@ -14,7 +14,7 @@
 * 模型特点:
    * 模型大小： V\*N(输入到隐藏层) + V\*N(隐藏层到输出层)
  
-![word2vec][/img/word2Vec.png] 
+![word2vec][img/word2Vec.png] 
 ## Skip Gram
 1. Item
 2. Item
