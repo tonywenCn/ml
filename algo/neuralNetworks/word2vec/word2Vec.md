@@ -22,11 +22,7 @@ word embedding: 在NLP中，把词或者短语从字典空间映射到实数的�
 
 
 ## Skip Gram
-1. Item
-2. Item
-   * Mixed
-   * Mixed  
-3. Item
+
 
 # 
 
