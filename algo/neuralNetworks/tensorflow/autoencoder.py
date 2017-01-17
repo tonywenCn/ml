@@ -50,6 +50,7 @@ examples_to_show = 10
 encode_decode = session.run(decoder_l2, feed_dict={x: mnist.test.images[:examples_to_show]})
 # Compare original images with their reconstructions
 f, a = plt.subplots(2, 10, figsize=(10, 2))
+plt.gray()
 for i in range(examples_to_show):
     a[0][i].imshow(np.reshape(mnist.test.images[i], (28, 28)))
     a[1][i].imshow(np.reshape(encode_decode[i], (28, 28)))
@@ -60,6 +61,7 @@ target_embedding = session.run(encoder_l2, feed_dict={x: mnist.test.images[examp
 
 topK = 4
 f, a = plt.subplots(topK + 1, 10, figsize=(10, topK + 1))
+plt.gray()
 for i in xrange(examples_to_show):
     min_idx = np.argsort(np.sum((target_embedding - source_embedding[i]) ** 2, axis = 1))
     a[0][i].imshow(np.reshape(mnist.test.images[i], (28, 28)))           
